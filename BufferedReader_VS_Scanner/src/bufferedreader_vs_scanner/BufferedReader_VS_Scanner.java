@@ -30,10 +30,11 @@ public class BufferedReader_VS_Scanner {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
+    public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException, IOException {
         fw = new FileWriter(path);
         fw.write();
-        
+        fbr = new FileBufferedReader(path);
+        System.out.println(fbr.read());        
     }
 
 }
